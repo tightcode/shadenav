@@ -1,0 +1,33 @@
+Shadenav
+
+What the project is for
+	Bootstrap navbar and dropdown shadow and slide effects animation plugin
+	
+How to configure and install it
+	Markup
+		Note: Include required CSS and JS in correct order
+		1. Wrap nav with div containing appropriate Shadenav navbar wrapper class
+			-.sn-default for (default) navbar
+			-.sn-static for static-top-navbar
+			-.sn-fixed for static-fixed-navbar
+		2. Add slide effect animation class to "dropdown"
+			-.jq-slide for Jquery slide effect
+			-.jqui-slide for JqueryUI slide effect
+		3. Wrap "dropdown-menu" with div
+		4. Wrap "dropdown-menu" links' text with divs
+	JavaScript
+		5. Add slide effect animation script to your JavaScript
+		
+An example of how to use it or get it running
+	Extract files for example/examples
+	
+The license that the project is offered under
+	The MIT License
+	
+How to contribute to it
+	If bug/bugs found, open an issue
+	Contact author @ https://gitter.im/tightcode
+	
+Version History / Release Notes
+	1.0.0-alpha
+		-Works with default, static top and fixed top navbars
