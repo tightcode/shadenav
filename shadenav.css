@@ -1,5 +1,5 @@
 /*!
- * Shadenav v1.0.0-alpha.1 ( https://github.com/tightcode/shadenav )
+ * Shadenav v1.0.0-alpha.2 ( https://github.com/tightcode/shadenav )
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 .sn-default {
@@ -9,10 +9,10 @@
   margin-bottom: 0;
 }
 .sn-static {
-	margin-bottom: 19px;
+  margin-bottom: 19px;
 }
 .sn-static .navbar-static-top {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 .dropdown-menu {
   margin-top: 0;
@@ -34,7 +34,6 @@
     box-shadow: none;
     float: none;
     position: static;
-    overflow: hidden;
     border: 0;
     border-radius: 0;
     background-color: transparent;
@@ -56,12 +55,9 @@
   .dropdown-menu>li>a, .navbar-nav .open .dropdown-menu>li>a {
     padding: 0;
   }
-	.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-		background-color: transparent;
-	}
-	.dropdown-menu>li>a:focus > div, .dropdown-menu>li>a:hover > div {
-		background-color: #f5f5f5;
-	}	
+  .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+    background-color: transparent;
+  }
   .dropdown-menu>li>a>div {
     padding: 5px 15px 5px 25px;
     position: relative;
@@ -76,24 +72,24 @@
   .sn-static {
     position: relative;
     z-index: 1000;
-  }	
+  }
   .sn-static .navbar-static-top {
     z-index: auto;
-  }	
-	.sn-fixed {
-		top: 0;
-		position: fixed;
-		z-index: 1030;
-		right: 0;
-		left: 0;
-	}
-	.sn-fixed .navbar-fixed-top {
-		right: auto;
-		left: auto;
-		top: auto;
-		position: relative;
-		z-index: auto;
-	}
+  }
+  .sn-fixed {
+    top: 0;
+    position: fixed;
+    z-index: 1030;
+    right: 0;
+    left: 0;
+  }
+  .sn-fixed .navbar-fixed-top {
+    right: auto;
+    left: auto;
+    top: auto;
+    position: relative;
+    z-index: auto;
+  }
   .navbar {
     box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
   }

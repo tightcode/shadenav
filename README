@@ -3,7 +3,7 @@ Shadenav
 What the project is for
 	Bootstrap 3 navbar and dropdown shadow and slide effects animation plugin
 		-Works with default, static top and fixed navbars ( See https://getbootstrap.com/docs/3.3/getting-started/#examples-navbars )
-	
+
 How to configure and install it
 	Markup
 		Note: Include Shadenav CSS and JS in correct order
@@ -19,10 +19,10 @@ How to configure and install it
 	JavaScript
 		Note: JqueryUI required for JqueryUI slide effect
 		5. Add slide effect animation script to your JavaScript
-		
+
 An example of how to use it or get it running
 	https://tightcode.github.io/shadenav
-	
+
 The license that the project is offered under
 	The MIT License
 
@@ -30,8 +30,10 @@ Contributing
 	Author: tightcode
 			Github: https://github.com/tightcode
 			Email: tightcodedev@gmail.com
-	
+
 Version History / Release Notes
+	1.0.0-alpha.2
+		-update code
 	1.0.0-alpha.1
 		-update readme
 		-update comments
