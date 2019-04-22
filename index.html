@@ -16,7 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="navbar.css" rel="stylesheet">
 
-    <!-- 1.0.0-alpha Include required CSS -->
+    <!-- Include Shadenav CSS -->
     <link href="shadenav.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -29,7 +29,7 @@
   <body>
 
     <div class="container">
-			<!-- 1.0.0-alpha Wrap nav with Shadenav navbar wrapper -->
+			<!-- Wrap nav element with div containing appropriate Shadenav wrapper class -->
 			<div class="sn-default">
 				<!-- Static navbar -->
 				<nav class="navbar navbar-default">
@@ -48,13 +48,13 @@
 								<li class="active"><a href="#">Home</a></li>
 								<li><a href="#">About</a></li>
 								<li><a href="#">Contact</a></li>
-								<!-- 1.0.0-alpha Add JqueryUI slide animation effect class to "dropdown" -->
+								<!-- Add slide effect animation class to "dropdown" element -->
 								<li class="dropdown jqui-slide">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-									<!-- 1.0.0-alpha Wrap "dropdown-menu" with div -->
+									<!-- Wrap "dropdown-menu" element with div -->
 									<div>
 										<ul class="dropdown-menu">
-											 <!-- 1.0.0-alpha Wrap "dropdown-menu" links' text with divs -->
+											 <!-- Wrap "dropdown-menu" element's links' text with divs -->
 											<li><a href="#"><div>Action</div></a></li>
 											<li><a href="#"><div>Another action</div></a></li>
 											<li><a href="#"><div>Something else here</div></a></li>
@@ -91,18 +91,25 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<!-- 1.0.0-alpha Include required JS -->
+		<!-- ..required for JqueryUI slide effect -->
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-		<!-- 1.0.0-alpha Include slide effects animation script -->
+		<!-- Include Shadenav.. JS -->
 		<script>
+			/*!
+			 * Shadenav v1.0.0-alpha.1 ( https://github.com/tightcode/shadenav )
+			 * Licensed under the MIT license
+			 */
+			 
+			// Jquery slide effect
 			$('.jq-slide').on('show.bs.dropdown', function() {
 				$(this).find('.dropdown-menu').first().stop(true, true).slideDown();
 			});
 			$('.jq-slide').on('hide.bs.dropdown', function() {
 				$(this).find('.dropdown-menu').first().stop(true, true).slideUp();
 			});
-			
+
+			// JqueryUI slide effect
 			$('.jqui-slide').on('show.bs.dropdown', function() {
 				if (window.matchMedia("(max-width: 767px)").matches) {
 					$(this).find('.dropdown-menu').first().stop(true, true).slideDown(350);
