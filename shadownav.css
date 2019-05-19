@@ -1,0 +1,58 @@
+/* Shadownav 4.0.0-alpha1 ( https://github.com/tightcode/shadownav ) */
+.navbar {
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+@media (max-width: 767.98px) {
+  .dropdown {
+    z-index: 0;
+		position:relative;
+  }
+  .dropdown>div {
+    position: relative;
+		z-index: 0;
+		background-color: white;
+		border-radius: 0.25rem;
+  }
+	.dropdown-menu {
+		background-color: initial;
+		border: 0;
+	}	
+	.dropdown-menu {
+		box-shadow: inset 0 1.5rem 1rem -1rem rgba(0, 0, 0, 0.5), inset 0 -1.5rem 1rem -1rem rgba(0, 0, 0, 0.5);
+	}
+	.dropdown-item:hover, .dropdown-item:focus {
+		background-color: initial;
+	}
+	.dropdown-item:hover > div, .dropdown-item:focus > div {
+		background-color: #f8f9fa;
+	}
+  .dropdown-menu>a>div {
+    position: relative;
+    z-index: -1;
+  }
+}
+@media (min-width: 768px) {
+	.sn-static {
+		position: relative;
+		z-index: 0;
+	}
+  .sn-fixed {
+    top: 0;
+    position: fixed;
+    z-index: 1030;
+    right: 0;
+    left: 0;
+  }
+  .sn-fixed .fixed-top {
+    right: auto;
+    left: auto;
+    top: auto;
+    position: relative;
+    z-index: auto;
+  }	
+  .dropdown>div {
+    position: absolute;
+    clip: rect(0.5rem, 9999px, 9999px, -9999px);
+		z-index: -1;
+  }
+}
